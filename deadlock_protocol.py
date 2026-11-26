@@ -103,7 +103,7 @@ class DeadlockProtocol:
         guard_positions = {(gx,gy) for gx, gy, dx, dy in self.guards}
         vision_tiles = {(gx + dx, gy + dy) for gx, gy, dx, dy in self.guards}
 
-        for y in range(self.height):
+        for y in range(self.height): 
             row_chars = []
             for x in range(self.width):
                 pos = (x, y)
